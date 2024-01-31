@@ -1,5 +1,5 @@
 /* Styles for the step container */
-.step_cont {
+.step_content {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
@@ -24,7 +24,7 @@
   }
   
   /* Styles for the buttons container */
-  .but_div {
+  .buttondiv {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;

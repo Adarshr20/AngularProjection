@@ -15,7 +15,7 @@ export class StepwizardComponent {
   constructor(public readonly commonservice:StepwizardServiceService) {}
 
     public setStep(no:number):void{
-      console.log("sd")
+   
       this.commonservice.currStep=no;
    
     }

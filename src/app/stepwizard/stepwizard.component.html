@@ -1,4 +1,4 @@
-<div class="step_cont">
+<div class="step_content">
     <div class="step" (click)="setStep(1)">1</div>
     <div class="step"(click)="setStep(2)">2</div>
     <div class="step"(click)="setStep(3)">3</div>
@@ -8,7 +8,7 @@
     <ng-content></ng-content>
   </div>
 
-  <div class="but_div">
+  <div class="buttondiv">
   <ng-container *ngIf="commonservice.currStep>1">
     <button class="sc_button" (click)="prev()">Previous</button>
   </ng-container>
