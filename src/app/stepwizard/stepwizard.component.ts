@@ -10,21 +10,20 @@ import { CommonModule } from '@angular/common';
   styleUrl: './stepwizard.component.css'
 })
 export class StepwizardComponent {
-  public expanded:boolean=true;
-
-  constructor(public readonly commonservice:StepwizardServiceService) {}
+ 
+  constructor(public readonly genservice:StepwizardServiceService) {}
 
     public setStep(no:number):void{
    
-      this.commonservice.currStep=no;
+      this.genservice.currStep=no;
    
     }
 
     public next(){
-      this.commonservice.currStep+=1
+      this.genservice.currStep+=1
     }
 
     public prev(){
-      this.commonservice.currStep-=1
+      this.genservice.currStep-=1
     }
 }

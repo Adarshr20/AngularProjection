@@ -10,5 +10,5 @@ import {  StepwizardServiceService } from '../stepwizard-service.service';
   styleUrl: './stepwizard-body.component.css'
 })
 export class StepwizardBodyComponent {
-  constructor(public readonly commonservice:StepwizardServiceService) {}
+  constructor(public readonly genservice:StepwizardServiceService) {}
 }
