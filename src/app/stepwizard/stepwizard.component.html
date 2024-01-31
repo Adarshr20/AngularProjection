@@ -1,0 +1,18 @@
+<div class="step_cont">
+    <div class="step" (click)="setStep(1)">1</div>
+    <div class="step"(click)="setStep(2)">2</div>
+    <div class="step"(click)="setStep(3)">3</div>
+    <div class="step"(click)="setStep(4)">4</div>
+</div>
+<div *ngIf="expanded">
+    <ng-content></ng-content>
+  </div>
+
+  <div class="but_div">
+  <ng-container *ngIf="commonservice.currStep>1">
+    <button class="sc_button" (click)="prev()">Previous</button>
+  </ng-container>
+  <ng-container *ngIf="commonservice.currStep!=4">
+    <button class="sc_button" (click)="next()">Save and continue</button>
+  </ng-container>
+</div>
