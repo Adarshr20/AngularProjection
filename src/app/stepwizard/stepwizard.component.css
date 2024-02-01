@@ -1,17 +1,18 @@
 
 .step_content {
     display: flex;
-    height: 50px;
+    height: 90px;
     justify-content: space-around;
     margin-bottom: 20px;
     background-color: yellow;
   }
   
   .step {
-    width: 40px;
-    height: 40px;
-    background-color: #3498db;
-    color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: white;
+    color:  #0d5e95;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,9 +20,14 @@
     cursor: pointer;
   }
   
- 
+  .step:hover {
+    background-color:#59b9f9 ;
+  }
   
-
+  .step.selected {
+    background-color: #59b9f9 ;
+    color: #fff; 
+}
   .buttondiv {
     display: flex;
     justify-content: space-between;
