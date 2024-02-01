@@ -3,10 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class StepwizardServiceService {
-
-  constructor() { }
-  public currStep:number=1;
+  public currStep: number = 1;
+  public stepCompleted: boolean[] = [true, false, false, false];
 }
-
 

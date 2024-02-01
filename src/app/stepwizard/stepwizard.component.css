@@ -1,14 +1,15 @@
-/* Styles for the step container */
+
 .step_content {
     display: flex;
+    height: 50px;
     justify-content: space-around;
     margin-bottom: 20px;
     background-color: yellow;
   }
   
   .step {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: #3498db;
     color: #fff;
     display: flex;
@@ -18,20 +19,17 @@
     cursor: pointer;
   }
   
-  /* Styles for the expanded content */
-  .expanded {
-    margin-top: 20px;
-  }
+ 
   
-  /* Styles for the buttons container */
+
   .buttondiv {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
   }
   
-  /* Styles for the navigation buttons */
-  .sc_button {
+ 
+  .navigation_button {
     padding: 10px;
     background-color: #3498db;
     color: #fff;
@@ -40,7 +38,7 @@
     cursor: pointer;
   }
   
-  /* Add hover effect for buttons */
-  .sc_button:hover {
+ 
+  .navigation_button:hover {
     background-color: #2980b9;
   }

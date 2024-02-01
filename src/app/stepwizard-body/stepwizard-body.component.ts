@@ -11,4 +11,7 @@ import {  StepwizardServiceService } from '../stepwizard-service.service';
 })
 export class StepwizardBodyComponent {
   constructor(public readonly genservice:StepwizardServiceService) {}
+  public completeStep(step: number): void {
+    this.genservice.stepCompleted[step - 1] = true;
+  }
 }

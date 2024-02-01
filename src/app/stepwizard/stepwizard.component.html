@@ -10,9 +10,13 @@
 
   <div class="buttondiv">
   <ng-container *ngIf="genservice.currStep>1">
-    <button class="sc_button" (click)="prev()">Previous</button>
+    <button class="navigation_button" (click)="prev()">Previous</button>
   </ng-container>
+  <ng-container *ngIf="genservice.currStep==3">
+    <button class="navigation_button" (click)="next()">skip</button>
+  </ng-container>
+
   <ng-container *ngIf="genservice.currStep!=4">
-    <button class="sc_button" (click)="next()">Save and continue</button>
+    <button class="navigation_button" (click)="next()">Save and continue</button>
   </ng-container>
 </div>
